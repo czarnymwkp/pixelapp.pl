@@ -1,0 +1,21 @@
+{
+  "packages": [
+    {
+      "name": "PixelApp Package",
+      "files": ["dist/**/*"],
+      "targets": ["PixelApp Production"]
+    }
+  ],
+  "targets": [
+    {
+      "type": "ftp",
+      "name": "PixelApp Production",
+      "dir": "dist",
+      "host": "serwer210980.lh.pl",
+      "port": 21,
+      "user": "serwer210980_pixelapp",
+      "password": "Slodkowiak22@",
+      "path": "/public_html"
+    }
+  ]
+}
