@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const NavbarMain = styled.nav`
     display: flex;
+    justify-content:center;
+    align-items:center;
     width:100%;
     gap:30px;
     color:white ;
