@@ -1,18 +1,20 @@
-import { NavLink, Outlet } from "react-router-dom"
-import { Content, OffertLayoutWrapper, OffertNav } from "./Offert.styled"
+import { NavLink, Outlet } from "react-router-dom";
+import { Content, OffertLayoutWrapper, OffertNav } from "./Offert.styled";
 
 export const OffertLayout = () => {
-    return (
-        <OffertLayoutWrapper>
-            <OffertNav>
-                <NavLink to="/offert/websites">Strony internetowe</NavLink>
-                <NavLink to="/offert/webapp">Aplikacje Webowe</NavLink>
-                <NavLink to="/offert/graphic">Grafiki pod Marketplace</NavLink>
-                <NavLink to="/offert/globalmarket">Obsługa i konfiguracja ofert zagranicznych</NavLink>
-            </OffertNav>
-            <Content>
-            <Outlet></Outlet>
-            </Content>
-        </OffertLayoutWrapper>
-    )
-}
+  return (
+    <OffertLayoutWrapper>
+      <OffertNav>
+        <NavLink to="/offert/websites">Strony internetowe</NavLink>
+        <NavLink to="/offert/webapp">Aplikacje Webowe</NavLink>
+        <NavLink to="/offert/graphic">Grafiki pod Marketplace</NavLink>
+        <NavLink to="/offert/globalmarket">
+          Obsługa i konfiguracja ofert zagranicznych
+        </NavLink>
+      </OffertNav>
+      <Content>
+        <Outlet></Outlet>
+      </Content>
+    </OffertLayoutWrapper>
+  );
+};
