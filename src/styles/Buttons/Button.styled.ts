@@ -6,7 +6,7 @@ export const FormButton = styled.button`
     padding:15px;
     border-radius:10px;
     border: 1px solid white;
-    width:7vw;
+    
         &:hover {
         background:#7C8C42;
         }

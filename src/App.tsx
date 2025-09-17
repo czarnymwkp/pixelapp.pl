@@ -29,16 +29,10 @@ function App() {
           <Route path="/register" element={<RegisteryForm></RegisteryForm>} />
           <Route path="/login" element={<LoginForm></LoginForm>} />
 
-          <Route path="/offert" element={<OffertLayout></OffertLayout>}>
+          <Route path="/offert" element={<OffertLayout />}>
             <Route index element={<Offert />}></Route>
-            <Route
-              path="websites"
-              element={<OffertWebsite></OffertWebsite>}
-            ></Route>
-            <Route
-              path="webapp"
-              element={<OffertWebApp></OffertWebApp>}
-            ></Route>
+            <Route path="websites" element={<OffertWebsite />}></Route>
+            <Route path="webapp" element={<OffertWebApp />}></Route>
           </Route>
         </Routes>
         <Footer />
