@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const FormButton = styled.button`
     background:#A4BF69;
+    width:100%;
     color:white;
     padding:15px;
     border-radius:10px;

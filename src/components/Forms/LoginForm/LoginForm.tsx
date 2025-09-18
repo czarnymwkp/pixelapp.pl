@@ -32,15 +32,25 @@ export const LoginForm = () => {
   };
   return (
     <>
-      <h2>LOGOWANIE</h2>
       <LoginFormWrapper onSubmit={handleSubmit(onSubmit)}>
+        <label htmlFor="">Twój email:</label>
         <FormInput type="email" placeholder="Email" {...register("email")} />
         {errors.email && <span>{errors.email?.message}</span>}
+        <label htmlFor="">Twoje hasło:</label>
         <FormInput
           type="password"
           placeholder="Hasło"
           {...register("password")}
         />
+        <div className="flex gap-6">
+          <div className="flex gap-2">
+            <input type="radio" />
+            <p>zapamiętaj hasło</p>
+          </div>
+          <div>
+            <p>Zapomniałeś hasła?</p>
+          </div>
+        </div>
         <FormButton type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Logowanie" : "Zaloguj"}
         </FormButton>

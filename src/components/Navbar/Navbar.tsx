@@ -18,6 +18,7 @@ export const Navbar = () => {
         <NavLink to="offert">OFERTA</NavLink>
         <NavLink to="register">REJESTRACJA</NavLink>
         <NavLink to="login">LOGOWANIE</NavLink>
+        <NavLink to="test">TESTY</NavLink>
       </NavbarMain>
 
       <div>{user ? "Zalogowany: " + user.email : "Niezalogowany"}</div>
