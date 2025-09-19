@@ -12,7 +12,7 @@ export const OffertLayoutWrapper = styled.div`
 `
 export const OffertNav = styled.nav`
   position: fixed;     /* zawsze przyklejony */
-  top: 100px;           /* wysokość Twojego topowego NavbarWrapper */
+  top: 110px;           /* wysokość Twojego topowego NavbarWrapper */
   left: 0;
   bottom: 0;
   width: 250px;
@@ -20,7 +20,8 @@ export const OffertNav = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
+  padding-top:50px;
+  
 
   a {
     color: rgb(90, 107, 51);
