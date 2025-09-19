@@ -10,7 +10,7 @@ background: white;
   padding: 50px;
   border: 1px solid white;
   border-radius: 20px;
-  min-height: 200px;
+  min-height: 700px;
   max-width: 600px;
   width: 100%;
   align-items: center;

@@ -34,24 +34,26 @@ export const FormTest1 = ({
 
   return (
     <form
-      className="flex flex-col gap-4"
+      className="flex flex-col gap-4 p-8 m-4 border-2 border-white-600 rounded-xl"
       action=""
       onSubmit={handleSubmit(onSubmit)}
     >
+      <label htmlFor="">Imię</label>
       <input
         className="rounded p-2"
         type="text"
-        placeholder="name"
+        placeholder="Wpisz imię"
         {...register("name", {
           required: "Pole wymagane",
           minLength: { value: 8, message: "Minimalnie 8 znaków" },
         })}
       />
       {errors.name && <p>{errors.name.message}</p>}
+      <label htmlFor="">Nazwisko</label>
       <input
         className="rounded p-2"
         type="text"
-        placeholder="surname"
+        placeholder="Wpisz nazwisko"
         {...register("surname", { required: "Pole jest wymagane" })}
       />
       {errors.surname && <p>{errors.surname.message}</p>}

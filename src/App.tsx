@@ -18,6 +18,7 @@ import { OffertGraphic } from "./pages/Offert/OffertGrapic";
 import { LoginPage } from "./pages/Login/LoginPage";
 import { RegisteryPage } from "./pages/Register/RegisterPage";
 import { Test } from "./pages/Testy/Test";
+import { Service } from "./pages/Services/Service";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
               <Route path="websites" element={<OffertWebsite />}></Route>
               <Route path="webapp" element={<OffertWebApp />}></Route>
               <Route path="graphic" element={<OffertGraphic />}></Route>
+              <Route path="services" element={<Service />} />
             </Route>
           </Routes>
         </MainTheme>

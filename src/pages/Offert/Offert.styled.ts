@@ -12,26 +12,27 @@ export const OffertLayoutWrapper = styled.div`
 `
 export const OffertNav = styled.nav`
   position: fixed;     /* zawsze przyklejony */
-  top: 60px;           /* wysokość Twojego topowego NavbarWrapper */
+  top: 100px;           /* wysokość Twojego topowego NavbarWrapper */
   left: 0;
   bottom: 0;
   width: 250px;
-  background: #a4bf69;
+  background:rgb(224, 238, 194);
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 20px;
 
   a {
-    color: #fff;
+    color: rgb(90, 107, 51);
     text-decoration: none;
     font-weight: 500;
   }
 
   a.active {
-    color: #000;
-    background: #fff;
+    color: ;
+    background: rgb(255, 255, 255);
     padding: 8px;
+    
     border-radius: 6px;
   }
    @media (max-width: 760px) {

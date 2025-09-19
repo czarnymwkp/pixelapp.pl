@@ -11,4 +11,28 @@ export const FormButton = styled.button`
         &:hover {
         background:#7C8C42;
         }
+`;
+export const LogoutButtonStyled = styled.button`
+    background:#A4BF69;
+    margin: 20px;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid white;
+    
+        &:hover {
+        background:#7C8C42;
+        }
+`
+export const LoginButtonStyled = styled.button`
+    background:#A4BF69;
+    margin: 20px;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid white;
+    
+        &:hover {
+        background:#7C8C42;
+        }
 `

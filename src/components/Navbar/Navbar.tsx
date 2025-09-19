@@ -2,6 +2,10 @@ import { NavLink } from "react-router-dom";
 import { NavbarMain, NavbarWrapper, MobileMenu } from "./Navbar.styled";
 import { useAuth } from "../../hooks/useAuth";
 import { useState } from "react";
+import { LogoutButton } from "../Buttons/LogoutButton";
+import { LoginButton } from "../Buttons/LoginButton";
+
+import LOGO from "./../../../public/logo.png";
 
 export const Navbar = () => {
   const user = useAuth();
@@ -9,7 +13,9 @@ export const Navbar = () => {
 
   return (
     <NavbarWrapper>
-      <div>LOGO</div>
+      <div>
+        <img src={LOGO} width={200} className="p-4" alt="" />
+      </div>
 
       <NavbarMain>
         <NavLink to="/">STRONA GŁÓWNA</NavLink>
@@ -17,11 +23,19 @@ export const Navbar = () => {
         <NavLink to="contact">KONTAKT</NavLink>
         <NavLink to="offert">OFERTA</NavLink>
         <NavLink to="register">REJESTRACJA</NavLink>
-        <NavLink to="login">LOGOWANIE</NavLink>
-        <NavLink to="test">TESTY</NavLink>
+
+        {user ? <NavLink to="test">TESTY</NavLink> : null}
       </NavbarMain>
 
-      <div>{user ? "Zalogowany: " + user.email : "Niezalogowany"}</div>
+      <div className="flex">
+        {user ? (
+          <div>
+            {user.email} <LogoutButton />
+          </div>
+        ) : (
+          <LoginButton />
+        )}
+      </div>
 
       {open && (
         <MobileMenu>
@@ -30,7 +44,7 @@ export const Navbar = () => {
           <NavLink to="contact">KONTAKT</NavLink>
           <NavLink to="offert">OFERTA</NavLink>
           <NavLink to="register">REJESTRACJA</NavLink>
-          <NavLink to="login">LOGOWANIE</NavLink>
+
           <p>{user ? "Zalogowany: " + user.email : "Niezalogowany"}</p>
         </MobileMenu>
       )}

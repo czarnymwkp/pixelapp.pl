@@ -18,7 +18,7 @@ export const Test = () => {
   return (
     <div className="flex h-screen flex-col justify-center items-center">
       <div className="p-2 ">
-        <h1>Dodawanie za pomoca tanstacka usera:</h1>
+        <h1 className="text-white">Dodawanie za pomoca tanstacka usera:</h1>
         <AddUserFormTest></AddUserFormTest>
       </div>
 
@@ -29,9 +29,9 @@ export const Test = () => {
       <div>
         <FormTest1 onAddUser={addUsers}></FormTest1>
       </div>
-      <div>
-        <h1>Pobieranie danych standardową metodą</h1>
-        <TestUserList users={users}></TestUserList>
+      <h1 className="text-white">Pobieranie danych standardową metodą</h1>
+      <div className="flex min-w-[400px] min-h-[150px] gap-4 p-8 m-5 border-2 border-white rounded-xl items-center justify-center">
+        <TestUserList users={users} />
       </div>
     </div>
   );

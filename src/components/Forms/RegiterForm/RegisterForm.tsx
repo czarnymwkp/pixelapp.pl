@@ -67,6 +67,8 @@ import { FormInput } from "../../../styles/Inputs/Inputs";
 import { auth } from "../../../firebase";
 import { FormButton } from "../../../styles/Buttons/Button.styled";
 
+import FaceLogin from "../../../../public/loginFace.png";
+
 type RegisterFormData = {
   username: string;
   email: string;
@@ -95,6 +97,7 @@ export const RegisteryForm = () => {
   return (
     <>
       <RegisterFormWrapper onSubmit={handleSubmit(onSubmit)}>
+        <img src={FaceLogin} width={200} alt="" />
         <label htmlFor="">Nazwa uźytkownika:</label>
         <FormInput
           type="text"
