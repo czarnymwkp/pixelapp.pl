@@ -7,7 +7,7 @@ export const NavbarWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 100px;
   width: 100%;
   background: ${({ theme }) => theme.colors.primary};
   padding: 0 20px;

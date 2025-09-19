@@ -1,17 +1,21 @@
 import styled from "styled-components";
 
 export const RegisterFormWrapper = styled.form`
-display: flex;
-flex-direction:row;
-gap:20px;
-margin: 30px;
-padding:20px;
-border: 1px black solid;
-border-radius:20px;
-height:30vh;
-align-items:center;
-justify-content: center;
-box-shadow: 2px 2px 15px #A4BF69;
+background: white;
+  display: flex;
+  background-color:white;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px auto;
+  padding: 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  min-height: 700px;
+  max-width: 600px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 15px rgb(233, 233, 233);
 
     @media(max-width: 1024px){
     flex-direction:column;}
@@ -19,19 +23,21 @@ box-shadow: 2px 2px 15px #A4BF69;
 `
 
 export const LoginFormWrapper = styled.form`
+background: white;
   display: flex;
-  flex-direction: row;
+  background-color:white;
+  flex-direction: column;
   gap: 20px;
   margin: 30px auto;
-  padding: 20px;
-  border: 1px solid black;
+  padding: 50px;
+  border: 1px solid white;
   border-radius: 20px;
   min-height: 200px;
   max-width: 600px;
   width: 100%;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 15px #A4BF69;
+  box-shadow: 2px 2px 15px rgb(233, 233, 233);
 
   @media (max-width: 760px) {
     flex-direction: column; /* pola jedno pod drugim */

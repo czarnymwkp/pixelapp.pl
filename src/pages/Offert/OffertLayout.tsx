@@ -8,9 +8,7 @@ export const OffertLayout = () => {
         <NavLink to="/offert/websites">Strony internetowe</NavLink>
         <NavLink to="/offert/webapp">Aplikacje Webowe</NavLink>
         <NavLink to="/offert/graphic">Grafiki pod Marketplace</NavLink>
-        <NavLink to="/offert/globalmarket">
-          Obsługa i konfiguracja ofert zagranicznych
-        </NavLink>
+        <NavLink to="/offert/services">Zagraniczne Rynki</NavLink>
       </OffertNav>
       <Content>
         <Outlet></Outlet>
