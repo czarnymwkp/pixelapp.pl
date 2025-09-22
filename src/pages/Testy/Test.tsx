@@ -3,6 +3,8 @@ import { FormTest1 } from "../../components/Test/FormsTest/FormTest1";
 import { TestUserList } from "../../components/Test/UserList";
 import { UserList } from "../../components/Test/TanstakUsers";
 import { AddUserFormTest } from "../../components/Test/AddUserFormTest";
+import { Counter } from "../../components/Test/UseReducerTest";
+import { ShopingCart } from "../../components/Test/UseReducerKartTest";
 
 export const Test = () => {
   const [users, setUsers] = useState(
@@ -16,10 +18,18 @@ export const Test = () => {
   };
 
   return (
-    <div className="flex h-screen flex-col justify-center items-center">
+    <div className="flex  flex-col justify-center items-center">
       <div className="p-2 ">
-        <h1 className="text-white">Dodawanie za pomoca tanstacka usera:</h1>
+        <h2 className="text-white">Dodawanie za pomoca tanstacka usera:</h2>
         <AddUserFormTest></AddUserFormTest>
+      </div>
+      <div className="p-2 ">
+        <h2 className="text-white">UseReducer cwiczenia</h2>
+        <Counter></Counter>
+      </div>
+      <div className="p-2 ">
+        <h2 className="text-white">UseReducer Koszyk zakupów</h2>
+        <ShopingCart></ShopingCart>
       </div>
 
       <h1 className="text-white">TanstackQuery - uzycie</h1>

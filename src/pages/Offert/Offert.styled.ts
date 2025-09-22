@@ -20,7 +20,8 @@ export const OffertNav = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
+  padding-top:50px;
+  
 
   a {
     color: rgb(90, 107, 51);
