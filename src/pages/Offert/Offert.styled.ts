@@ -12,7 +12,7 @@ export const OffertLayoutWrapper = styled.div`
 `
 export const OffertNav = styled.nav`
   position: fixed;     /* zawsze przyklejony */
-  top: 110px;           /* wysokość Twojego topowego NavbarWrapper */
+  top: 100px;           /* wysokość Twojego topowego NavbarWrapper */
   left: 0;
   bottom: 0;
   width: 250px;

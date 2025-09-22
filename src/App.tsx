@@ -19,12 +19,14 @@ import { LoginPage } from "./pages/Login/LoginPage";
 import { RegisteryPage } from "./pages/Register/RegisterPage";
 import { Test } from "./pages/Testy/Test";
 import { Service } from "./pages/Services/Service";
+import { HomePageSlider } from "./components/Sliders/HomePageSlider";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <Navbar />
+        <HomePageSlider></HomePageSlider>
         <MainTheme>
           <Routes>
             <Route path="/" element={<HomePage></HomePage>} />

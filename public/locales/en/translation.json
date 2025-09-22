@@ -1,4 +1,5 @@
 {
     "welcome": "Welcome to the page",
-    "logout":"Logout"
+    "logout":"Logout",
+    "mainPage" : "HOME PAGE"
 }
